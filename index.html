@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>laba</title>
+</head>
+<body>
+<script>
+result1 = prompt("Введите 1 число");
+result2 = prompt("Введите 2 число");
+class sum {
+constructor (num1,num2){
+this.num1=num1;
+this.num2=num2;
+}
+addition(){
+document.writeln(`Сложение: ${ this.num1 + this.num2}`)
+}
+subtraction(){
+document.writeln(`Вычитание: ${this.num1 - this.num2}`)
+}
+composition(){
+document.writeln(`Умножение: ${this.num1 * this.num2}`)
+}
+Private(){
+document.writeln(`Деление: ${this.num1 / this.num2}`)
+}
+}
+var arr = [new sum(+result1,+result2), new sum(+result1,+result2), new sum(+result1,+result2)]
+for (let i = 0; i < arr.length; i++) {
+document.writeln(`Объект ${i}`)
+arr[i].addition()
+arr[i].subtraction()
+arr[i].composition()
+arr[i].Private()
+document.writeln("<br>")
+}
+</script>
+<prompt>
+</body>
+</html>
